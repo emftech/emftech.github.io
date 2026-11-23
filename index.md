@@ -7,7 +7,7 @@ title: Home
 <section class="hero">
   <div>
     <h1 class="hero-name">Estefano Machado Ferrer</h1>
-    <p class="hero-role">Electronics engineer working on optical coherence elastography at the Biophotonics and Biomedical Optics Research Group, PUCP, Lima.</p>
+    <p class="hero-role">Electronics Engineer from the Pontifical Catholic University of Peru (PUCP), focused on Digital Signal and Image Processing applied to Biomedical Imaging. Research Assistant in the Biophotonics and Biomedical Optics Research Group from PUCP (GIBIO PUCP).</p>
   </div>
   <img class="hero-photo" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Portrait of Estefano Machado Ferrer" width="200" height="250">
 </section>
@@ -18,9 +18,7 @@ title: Home
   <circle class="source" cx="10" cy="32" r="5" />
 </svg>
 
-<p class="lede">I work where biomedical optics, medical imaging and signal processing meet: designing acquisition schemes, estimation methods and computational models that turn raw sensor data into quantitative images of the body.</p>
-
-My B.Sc. in Electronics Engineering at PUCP focused on digital signal and image processing. My interests are wave-based elastography, inverse problems, and image reconstruction and estimation for biomedical data. I also teach as a Teaching Assistant in the Faculty of Electrical and Electronics Engineering at PUCP.
+<p class="lede"> Bachelor of Science in Electronics Engineering (PUCP, top 20%) working at the intersection of signal processing, AI and data analysis, with experience in both industry and research. In industry, I supported business development at Siemens Energy through financial modeling and market analysis; in research, I am first author of an IEEE IUS paper (10 citations), I presented my thesis on wave-based Optical Coherence Elastography at IEEE LAUW 2026, and I am preparing it for a Q1 journal. I build computer vision and deep learning pipelines (YOLO, OpenCV, PyTorch), won a national AI hackathon, and have taught 9 university courses as a teaching assistant. Bilingual (C2 English). Open to roles in data science, AI and engineering, and to graduate research in medical imaging and signal processing.
 
 <p class="todo-block"><strong>Placeholder:</strong> add your current status, such as "Applying to Ph.D. programs in Electrical Engineering for Fall 2028".</p>
 
