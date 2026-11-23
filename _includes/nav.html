@@ -1,0 +1,8 @@
+<nav>
+  <ul>
+    {% for item in site.nav %}
+    <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a></li>
+    {% endfor %}
+    <li><a href="{{ '/files/cv.pdf' | relative_url }}">CV</a></li>
+  </ul>
+</nav>

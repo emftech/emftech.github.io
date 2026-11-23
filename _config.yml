@@ -1,0 +1,20 @@
+title: Estefano Machado Ferrer
+description: Electronics Engineer and researcher in optical coherence elastography, biomedical optics and signal and image processing.
+author: Estefano Machado Ferrer
+url: "https://emftech.github.io"
+baseurl: ""
+lang: en
+markdown: kramdown
+exclude: [README.md, Gemfile, Gemfile.lock, _site]
+
+nav:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Projects
+    url: /projects/
+  - title: Teaching
+    url: /teaching/
+  - title: Contact
+    url: /contact/
