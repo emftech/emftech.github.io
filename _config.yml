@@ -5,7 +5,7 @@ url: "https://emftech.github.io"
 baseurl: ""
 lang: en
 markdown: kramdown
-exclude: [README.md, Gemfile, Gemfile.lock, _site]
+exclude: [README.md, Gemfile, Gemfile.lock, _site, .claude]
 
 nav:
   - title: Home
