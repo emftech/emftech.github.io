@@ -18,7 +18,7 @@ title: Home
   <circle class="source" cx="10" cy="32" r="5" />
 </svg>
 
-<p class="lede">I build acquisition and signal processing methods that let optical coherence tomography measure how stiff soft tissue is, by tracking the mechanical waves that travel through it.</p>
+<p class="lede">I work where biomedical optics, medical imaging and signal processing meet: designing acquisition schemes, estimation methods and computational models that turn raw sensor data into quantitative images of the body.</p>
 
 My B.Sc. in Electronics Engineering at PUCP focused on digital signal and image processing. My interests are wave-based elastography, inverse problems, and image reconstruction and estimation for biomedical data. I also teach as a Teaching Assistant in the Faculty of Electrical and Electronics Engineering at PUCP.
 
