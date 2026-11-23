@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
-  {% unless page.home %}{% include nav.html %}{% endunless %}
+  {% include nav.html %}
   <div class="wrapper{% if page.home %} home{% endif %}">
     {% if page.home %}
     <header>

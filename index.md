@@ -17,18 +17,6 @@ In my undergraduate thesis, supervised by Prof. Fernando Zvietcovich, I proposed
 <p class="todo-block"><strong>Placeholder:</strong> add your current status, such as "Applying to Ph.D. programs in Electrical Engineering for Fall 2028".</p>
 
 <div class="home-links">
-  <ul>
-    <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
-    <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-    <li><a href="{{ '/teaching/' | relative_url }}">Teaching</a></li>
-  </ul>
-
-  <h4>Other</h4>
-  <ul>
-    <li><a href="{{ '/contact/' | relative_url }}">Contact information</a></li>
-    <li><a href="{{ '/files/cv.pdf' | relative_url }}">CV</a> <span class="todo">PDF needed</span></li>
-  </ul>
-
   <div class="icons">
     <a href="#" aria-label="Google Scholar" title="Google Scholar (link needed)"><i class="fa-brands fa-google-scholar"></i></a>
     <a href="#" aria-label="ORCID" title="ORCID (link needed)"><i class="fa-brands fa-orcid"></i></a>

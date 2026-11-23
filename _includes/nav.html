@@ -1,8 +1,27 @@
-<nav>
-  <ul>
-    {% for item in site.nav %}
-    <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a></li>
-    {% endfor %}
-    <li><a href="{{ '/files/cv.pdf' | relative_url }}">CV</a></li>
-  </ul>
+<nav class="topbar" aria-label="Main">
+  <div class="topbar-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark" aria-hidden="true">EM</span>
+      <span class="brand-name">Estefano Machado Ferrer</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="site-menu" class="menu">
+      {% for item in site.nav %}
+      <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+      <li><a class="cv-btn" href="{{ '/files/cv.pdf' | relative_url }}"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> CV</a></li>
+    </ul>
+  </div>
 </nav>
+<script>
+  (function () {
+    var b = document.querySelector('.menu-toggle'), n = document.querySelector('.topbar');
+    b.addEventListener('click', function () {
+      var open = n.classList.toggle('open');
+      b.setAttribute('aria-expanded', open);
+      b.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+  })();
+</script>
