@@ -8,18 +8,13 @@
   <meta name="author" content="{{ site.author }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
   {% include nav.html %}
-  <div class="wrapper{% if page.home %} home{% endif %}">
-    {% if page.home %}
-    <header>
-      <img id="img-profile" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Photo of Estefano Machado Ferrer" draggable="false">
-    </header>
-    {% endif %}
+  <div class="wrapper">
     <main>
       {{ content }}
     </main>
