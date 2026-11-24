@@ -1,17 +1,37 @@
-<nav class="topbar" aria-label="Main">
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign langpages = site.pages | where: "lang", lang -%}
+<nav class="topbar" aria-label="{% if lang == 'es' %}Principal{% else %}Main{% endif %}">
   <div class="topbar-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">
+    {%- assign home = langpages | where: "ref", "home" | first %}
+    <a class="brand" href="{{ home.url | relative_url }}">
       <span class="brand-mark" aria-hidden="true">EM</span>
       <span class="brand-name">Estefano Machado Ferrer</span>
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="topbar-tools">
+      <div class="lang-switch">
+        {%- for code in site.data.i18n %}
+        {%- assign c = code[0] -%}
+        {%- assign target = site.pages | where: "ref", page.ref | where: "lang", c | first -%}
+        {%- unless target %}{% assign target = site.pages | where: "ref", "home" | where: "lang", c | first %}{% endunless -%}
+        {%- if c == lang %}
+        <span class="lang-current" aria-current="true" title="{{ code[1].name }}">{{ code[1].short }}</span>
+        {%- else %}
+        <a href="{{ target.url | relative_url }}" hreflang="{{ c }}" lang="{{ c }}" title="{{ t.switch_label }}" aria-label="{{ t.switch_label }}">{{ code[1].short }}</a>
+        {%- endif %}
+        {%- endfor %}
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="{{ t.open_menu }}" data-open="{{ t.open_menu }}" data-close="{{ t.close_menu }}">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
     <ul id="site-menu" class="menu">
-      {% for item in site.nav %}
-      <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a></li>
-      {% endfor %}
-      <li><a class="cv-btn" href="{{ '/files/cv.pdf' | relative_url }}"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> CV</a></li>
+      {%- for item in t.nav %}
+      {%- assign target = langpages | where: "ref", item.ref | first %}
+      <li><a href="{{ target.url | relative_url }}"{% if page.ref == item.ref %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {%- endfor %}
+      {%- assign cvpage = langpages | where: "ref", "cv" | first %}
+      <li><a class="cv-btn{% if page.ref == 'cv' %} is-current{% endif %}" href="{{ cvpage.url | relative_url }}"{% if page.ref == 'cv' %} aria-current="page"{% endif %}><i class="fa-solid fa-file-lines" aria-hidden="true"></i> {{ t.cv }}</a></li>
     </ul>
   </div>
 </nav>
@@ -21,7 +41,7 @@
     b.addEventListener('click', function () {
       var open = n.classList.toggle('open');
       b.setAttribute('aria-expanded', open);
-      b.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      b.setAttribute('aria-label', open ? b.dataset.close : b.dataset.open);
     });
   })();
 </script>

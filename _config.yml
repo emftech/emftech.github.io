@@ -7,14 +7,8 @@ lang: en
 markdown: kramdown
 exclude: [README.md, Gemfile, Gemfile.lock, _site, .claude]
 
-nav:
-  - title: Home
-    url: /
-  - title: Research
-    url: /research/
-  - title: Projects
-    url: /projects/
-  - title: Teaching
-    url: /teaching/
-  - title: Contact
-    url: /contact/
+defaults:
+  - scope: { path: "" }
+    values: { layout: default, lang: en }
+  - scope: { path: "es" }
+    values: { lang: es }

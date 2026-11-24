@@ -1,0 +1,29 @@
+# Newest first. To post an update, add an item at the top with a date (YYYY-MM-DD)
+# and the text in both languages. Markdown links work inside en/es.
+- date: 2026-11-23
+  en: Launched this website, with an English and a Spanish version, and updated my [CV](/cv/).
+  es: Lancé este sitio web, en inglés y en español, y actualicé mi [CV](/es/cv/).
+- date: 2026-08-17
+  en: "Semester 2026-2: teaching assistant for Digital Signal Processing, Digital Circuits and Systems, Fundamentals and Applications of Electronics, and Electromagnetic Field Theory at PUCP."
+  es: "Semestre 2026-2: jefe de práctica de Procesamiento Digital de Señales, Circuitos y Sistemas Digitales, Fundamentos y Aplicaciones de la Electrónica, y Teoría de Campos Electromagnéticos en la PUCP."
+- date: 2026-07-31
+  en: Completed my B.Sc. in Electronics Engineering at PUCP, in the top 20% of the Faculty of Science and Engineering.
+  es: Culminé el Bachillerato en Ciencias con mención en Ingeniería Electrónica en la PUCP, en el quinto superior de la Facultad de Ciencias e Ingeniería.
+- date: 2026-07-14
+  en: Presented my thesis work as a poster at the [IEEE UFFC Latin American Ultrasonics Workshop (LAUW 2026)](/research/#lauw-2026) in Lima.
+  es: Presenté el trabajo de mi tesis en un póster en el [IEEE UFFC Latin American Ultrasonics Workshop (LAUW 2026)](/es/research/#lauw-2026) en Lima.
+- date: 2025-03-01
+  en: Joined the Biophotonics and Biomedical Optics Research Group (GIBIO, PUCP) to work on wave-based optical coherence elastography with Prof. Fernando Zvietcovich.
+  es: Me uní al Grupo de Investigación en Biofotónica y Óptica Biomédica (GIBIO, PUCP) para investigar elastografía por coherencia óptica basada en ondas con el Prof. Fernando Zvietcovich.
+- date: 2024-11-01
+  en: Started a business development internship at Siemens Energy, South America.
+  es: Inicié unas prácticas en desarrollo de negocios en Siemens Energy, Sudamérica.
+- date: 2024-08-01
+  en: Took the Ethics of AI in Business short course at Harvard University, fully funded by the PUCP Excellence Scholarships Program.
+  es: Llevé el curso corto Ethics of AI in Business en la Universidad de Harvard, financiado por el Programa de Becas de Excelencia de la PUCP.
+- date: 2022-11-01
+  en: Won 1st place at the Hackathon Smart Solutions #13, AI for the SDGs (IEEE Peru Section, IEEE INTERCON 2022), with IrisDetect.
+  es: Obtuve el 1.er puesto en el Hackathon Smart Solutions #13, IA para los ODS (IEEE Sección Perú, IEEE INTERCON 2022), con IrisDetect.
+- date: 2020-09-06
+  en: Presented my first paper, on reverberant shear wave elastography of skeletal muscle, at the IEEE International Ultrasonics Symposium (IUS 2020), at 19.
+  es: Presenté mi primer artículo, sobre elastografía reverberante de ondas de corte en músculo esquelético, en el IEEE International Ultrasonics Symposium (IUS 2020), a los 19 años.

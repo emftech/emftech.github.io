@@ -1,17 +1,14 @@
 # Estefano Machado Ferrer — personal academic website
 
-Jekyll site for GitHub Pages. Structure: Home, Research, Projects, Teaching, Contact, CV.
+Jekyll site for GitHub Pages, in English (root) and Spanish (`es/`).
+
+## Structure
+- Pages: Home, Research, Projects, Teaching, News, Contact, CV. Each English page has a Spanish twin in `es/` with the same `ref` in its front matter; the EN/ES switch in the top bar uses `ref` to jump between them.
+- Navigation and interface strings: `_data/i18n.yml`.
+- News items (both languages): `_data/news.yml`. Add new items at the top.
+- PDFs: `files/cv.pdf` (EN), `files/cv-es.pdf` (ES), `files/lauw2026-poster.pdf`, `files/machado-2026-thesis.pdf` (web-compressed; full resolution lives in the OCE_AcquisitionProtocols_Simulator repo).
+- Design skills for future changes: `.claude/skills` (excluded from the build).
 
 ## Run locally
     gem install jekyll
     jekyll serve      # then open http://localhost:4000
-
-## Publish on GitHub Pages
-1. Create a repo named `<github-username>.github.io`.
-2. Push these files to the `main` branch.
-3. Settings > Pages > Deploy from branch `main` (root).
-
-## Fill in
-- `assets/img/` : add your photo and change the `src` in `_layouts/default.html`.
-- `files/cv.pdf` : your CV.
-- Search for `todo` and `[` brackets in the `.md` pages; these mark placeholders.
