@@ -1,0 +1,32 @@
+# Interface strings and navigation for each language.
+# Pages pair up across languages through the `ref` key in their front matter.
+en:
+  name: English
+  short: EN
+  description: Electronics Engineer and researcher in optical coherence elastography, biomedical optics and signal and image processing.
+  open_menu: Open menu
+  close_menu: Close menu
+  switch_label: Leer en español
+  nav:
+    - { title: Home, ref: home }
+    - { title: Research, ref: research }
+    - { title: Projects, ref: projects }
+    - { title: Teaching, ref: teaching }
+    - { title: News, ref: news }
+    - { title: Contact, ref: contact }
+  cv: CV
+es:
+  name: Español
+  short: ES
+  description: Ingeniero Electrónico e investigador en elastografía por coherencia óptica, óptica biomédica y procesamiento de señales e imágenes.
+  open_menu: Abrir menú
+  close_menu: Cerrar menú
+  switch_label: Read in English
+  nav:
+    - { title: Inicio, ref: home }
+    - { title: Investigación, ref: research }
+    - { title: Proyectos, ref: projects }
+    - { title: Docencia, ref: teaching }
+    - { title: Novedades, ref: news }
+    - { title: Contacto, ref: contact }
+  cv: CV

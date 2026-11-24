@@ -1,7 +1,8 @@
 ---
 layout: default
-home: true
 title: Home
+ref: home
+permalink: /
 ---
 
 <section class="hero">
@@ -18,16 +19,23 @@ title: Home
   <circle class="source" cx="10" cy="32" r="5" />
 </svg>
 
-<p class="lede"> Bachelor of Science in Electronics Engineering (PUCP, top 20%) working at the intersection of signal processing, AI and data analysis, with experience in both industry and research. In industry, I supported business development at Siemens Energy through financial modeling and market analysis; in research, I am first author of an IEEE IUS paper (10 citations), I presented my thesis on wave-based Optical Coherence Elastography at IEEE LAUW 2026, and I am preparing it for a Q1 journal. I build computer vision and deep learning pipelines (YOLO, OpenCV, PyTorch), won a national AI hackathon, and have taught 9 university courses as a teaching assistant. Bilingual (C2 English). Open to roles in data science, AI and engineering, and to graduate research in medical imaging and signal processing.
+<p class="lede">Bachelor of Science in Electronics Engineering (PUCP, top 20%) working at the intersection of signal processing, AI and data analysis, with experience in both industry and research. In industry, I supported business development at Siemens Energy through financial modeling and market analysis; in research, I am first author of an IEEE IUS paper (10 citations), I presented my thesis on wave-based Optical Coherence Elastography at IEEE LAUW 2026, and I am preparing it for a Q1 journal. I build computer vision and deep learning pipelines (YOLO, OpenCV, PyTorch), won a national AI hackathon, and have taught 9 university courses as a teaching assistant. Bilingual (C2 English). Open to roles in data science, AI and engineering, and to graduate research in medical imaging and signal processing.</p>
 
-<p class="todo-block"><strong>Placeholder:</strong> add your current status, such as "Applying to Ph.D. programs in Electrical Engineering for Fall 2028".</p>
+<div class="status" role="note" aria-label="Current status">
+  <i class="fa-solid fa-signal" aria-hidden="true"></i>
+  <ul>
+    <li>Applying to Ph.D. programs in Electrical Engineering (medical imaging and signal processing) for Fall 2028.</li>
+    <li>Writing a Q1 journal paper from my optical coherence elastography research.</li>
+    <li>Open to full-time roles in data science, machine learning and deep learning in the meantime.</li>
+  </ul>
+</div>
 
 ### Selected work
 
 <ul class="highlights">
   <li>
     <span class="year">2026</span>
-    <span><a class="what" href="https://github.com/emftech/OCE_AcquisitionProtocols_Simulator/blob/main/docs/Machado_2026_Thesis_Acquisition_Protocol_NonCylindrical_WaveBased_OCE.pdf" target="_blank">Synchronized BM-mode (SBM) acquisition for wave-based OCE</a>
+    <span><a class="what" href="{{ '/files/machado-2026-thesis.pdf' | relative_url }}" target="_blank">Synchronized BM-mode (SBM) acquisition for wave-based OCE</a>
     <span class="detail">B.Sc. thesis, advised by Prof. Fernando Zvietcovich. A raster-scan protocol that recovers 2D wavefields in equivalent time, validated in simulation and on two OCT systems.</span></span>
   </li>
   <li>
@@ -40,11 +48,17 @@ title: Home
     <span><a class="what" href="{{ '/projects/' | relative_url }}">Open-source OCE simulator and experimental code</a>
     <span class="detail">MATLAB and k-Wave framework for comparing scan protocols, plus the LabVIEW and processing chain used on swept-source and spectral-domain OCT.</span></span>
   </li>
+  <li>
+    <span class="year">2020</span>
+    <span><a class="what" href="https://ieeexplore.ieee.org/abstract/document/9251504" target="_blank">First-author paper at the IEEE International Ultrasonics Symposium</a>
+    <span class="detail">Reverberant shear wave elastography for in vivo skeletal-muscle viscoelasticity, presented at 19. Cited 10 times.</span></span>
+  </li>
 </ul>
 
 <div class="profiles">
-  <a href="https://github.com/emftech"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
-  <a class="pending" href="#" title="Link needed"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i> Google Scholar</a>
-  <a class="pending" href="#" title="Link needed"><i class="fa-brands fa-orcid" aria-hidden="true"></i> ORCID</a>
-  <a class="pending" href="#" title="Link needed"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+  <a href="{{ '/cv/' | relative_url }}"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> CV</a>
+  <a href="https://github.com/emftech" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+  <a href="https://orcid.org/0009-0001-6571-7577" target="_blank"><i class="fa-brands fa-orcid" aria-hidden="true"></i> ORCID</a>
+  <a href="https://www.linkedin.com/in/estefano-machado-ferrer/" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+  <a href="https://www.youtube.com/@emftechEE" target="_blank"><i class="fa-brands fa-youtube" aria-hidden="true"></i> YouTube</a>
 </div>

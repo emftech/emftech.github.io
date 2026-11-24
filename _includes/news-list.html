@@ -1,0 +1,11 @@
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign months_es = "ene.,feb.,mar.,abr.,may.,jun.,jul.,ago.,set.,oct.,nov.,dic." | split: "," -%}
+<ul class="news">
+  {%- for item in site.data.news %}
+  {%- assign d = item.date | date: "%Y-%m-%d" %}
+  <li>
+    <time datetime="{{ d }}">{% if lang == "es" %}{% assign m = item.date | date: "%-m" | minus: 1 %}{{ months_es[m] }} {{ item.date | date: "%Y" }}{% else %}{{ item.date | date: "%b %Y" }}{% endif %}</time>
+    <span>{{ item[lang] | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+  </li>
+  {%- endfor %}
+</ul>
